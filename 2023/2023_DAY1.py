@@ -52,6 +52,7 @@ def part1():
                     break
             if len(first+ last)>0:
                 values.append(int(first + last))
+
         print (f'Part 1 answer is {sum(values)}')
 
 
@@ -86,10 +87,9 @@ def part2():
         for c in cals:
             temp=c
             for k in numlist.keys():
-                # if k in c:
-                #     p.append(numlist[k])
+
                 temp=temp.replace(k,k[0:1]+str(numlist[k])+k[1:])
-                #print(temp)
+
 
             first = ""
             last = ""
@@ -99,7 +99,7 @@ def part2():
                     first = char
                     break
 
-            #for char in temp[::-1]:
+
             for char in reversed(temp):
                 if char in "0123456789":
                     last = char
