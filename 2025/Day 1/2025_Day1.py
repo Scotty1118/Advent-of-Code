@@ -61,7 +61,7 @@ Analyze the rotations in your attached document. What's the actual password to o
 def text_list_Split():
         list1 = []
         list2 = []
-        with open('2025_Day1','r') as comm_List:
+        with open('2025_Day1', 'r') as comm_List:
             combinations = [i.strip('\n').split() for i in comm_List.readlines()]
         for a in range(len(combinations)):
             for b in combinations[a]:
